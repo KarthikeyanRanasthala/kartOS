@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+        --apt-indices false \
+        --architectures amd64 \
+        --binary-images iso-hybrid \
+        --clean \
+        --debian-installer live \
+        --debian-installer-gui true \
+        --distribution buster \
+        --iso-application "kartOS" \
+        --iso-preparer "Karthikeyan Ranasthala" \
+        --iso-publisher "Project kartOS https://www.github.com/KarthikeyanRanasthala/kartOS" \
+        --iso-volume "kartOS Volume" \
+        --linux-flavours amd64 \
+        --linux-packages "linux-image linux-headers" \
+        --memtest none \
+        --mode debian \
+        --archive-areas "main contrib" \
+        --security true \
+        --updates true \
+        --verbose \
+        --win32-loader true \
+        "${@}"
+
+        
