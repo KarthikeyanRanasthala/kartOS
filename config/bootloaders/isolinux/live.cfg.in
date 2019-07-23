@@ -1,0 +1,7 @@
+label live-@FLAVOUR@
+	menu label ^Try kartOS Pre-Alpha
+	menu default
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE@
+
