@@ -8,7 +8,7 @@ Download the latest Pre-Alpha Release at https://kartOS.sourceforge.io/
 
 ## Details
 
-Linux Kernel - 4.19.37-5
+Linux Kernel - 4.19.0-5
 
 Base - Debian 10 Buster
 
