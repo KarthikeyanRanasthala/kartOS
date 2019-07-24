@@ -2,6 +2,9 @@
 
 A Custom Debian Based Linux Operating System.
 
+## Downloads
+
+Download the latest Pre-Alpha Release at https://kartOS.sourceforge.io/
 
 ## Details
 
@@ -27,11 +30,7 @@ sudo lb build
 
 ## Stages of the build
 
-The build process is divided into different stages with varoius customizations applied in sequence in each stage. 
-The Bootstrap stage is the initial phase of populating the chroot directory with packages to make a barebones Debian system.
-This is followed by the chroot stage in which the chroot directory is contructed by populating it with all the packages listed in the configuration along with any other hooks. Most customization of the content occurs in this stage.
-The binary stage is the final stage in which a bootable image is built using the contents of chroot directory to contruct the root filesystem and including the installer on the target medium outside the filesystem.
-Within each of these stages, there is a particular sequence in which commands are applied. These are arranged in such a way as to ensure customizations can be layered in a reasonable fashion.
+The build process is divided into different stages with varoius customizations applied in sequence in each stage. The Bootstrap stage is the initial phase of populating the chroot directory with packages to make a barebones Debian system. This is followed by the chroot stage in which the chroot directory is contructed by populating it with all the packages listed in the configuration along with any other hooks. Most customization of the content occurs in this stage. The Binary stage is the final stage in which a bootable image is built using the contents of chroot directory to contruct the root filesystem and including the installer on the target medium outside the filesystem. Within each of these stages, there is a particular sequence in which commands are applied. These are arranged in such a way as to ensure customizations can be layered in a reasonable fashion.
 
 
 ## References
